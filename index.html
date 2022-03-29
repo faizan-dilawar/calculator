@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcu.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <h5>This is Age Calculator</h5>
+
+                <div class="block">
+                    <p class="title">Date</p>
+                    <input type="text" name=date id="date" placeholder=" DD" minlength="1" maxlength="2" required>
+                </div>
+
+                <div class="block">
+                    <p class="title">Month</p>
+                    <input type="text" name=month id="month" placeholder="MM" minlength="1" maxlength="2" required>
+                </div>
+
+                <div class="block">
+                    <p class="title">Year</p>
+                    <input type="text" name=year id="year" placeholder=" YYYY" minlength="1" maxlength="4" required>
+
+                </div>
+                <div class="base">
+                    <input type="button" name=submit value=" submit" onclick="age()" />
+                </div>
+            </div>
+            <!-- This is a Display -->
+
+            <div class="agedisplay" id="age">
+
+            </div>
+            <p class = "myname"> Made by @Faizan Dilawar</p>
+
+
+        </form>
+
+
+
+    </div>
+</body>
+<script src="calcu.js"></script>
+</html>
